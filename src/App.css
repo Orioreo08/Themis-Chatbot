@@ -1,0 +1,68 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.app-container {
+  position: relative;
+  min-height: 90vh;
+  overflow: hidden;
+
+}
+
+/* Fondo con imagen + LightRays */
+.background-layer {
+ position: fixed;              /* Fijo para cubrir todo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;                /* Altura completa */
+  background: url("./background/Diseño\ sin\ título\ \(5\).png")
+              no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;    
+}
+
+.background-layer > * {
+  position: absolute;
+  inset: 0;
+  z-index: -1; 
+}
+
+/* Sidebar fijo con sombra y bordes */
+.sidebar {
+  position: fixed;
+  top: 10px;                  
+  left: 50%;                  
+  transform: translateX(-50%);/* centra horizontalmente */
+  width: 95%;                 
+  height: 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+/* Contenido principal con espacio debajo del navbar */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-top: 100px; /* separa el chat del navbar */
+  position: relative;
+  z-index: 1;
+}

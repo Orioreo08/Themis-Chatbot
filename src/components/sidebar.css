@@ -1,0 +1,62 @@
+.sidebar {
+  position: fixed;
+  top: 10px;                  
+  left: 50%;                  
+  transform: translateX(-50%);/* centra horizontalmente */
+  width: 95%;                 
+  height: 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+.navbar-logo h2 {
+  margin: 0;
+  color: black;           /* Texto claro para contraste */
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+}
+
+.navbar-links li a:hover {
+  color: #00bcd4;        /* Azul moderno para hover */
+}
+
+.btn-login {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-logo {
+  width: 32px;
+  height: auto;
+  transition: transform 0.2s;
+}
+
+.btn-login:hover .login-logo {
+  transform: scale(1.1);
+}

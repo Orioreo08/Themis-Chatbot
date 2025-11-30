@@ -1,0 +1,78 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+  justify-content: center;
+  min-height: 80vh;          /* Ocupa gran parte de la pantalla */
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+
+  /* Fondo difuminado estilo Copilot */
+  background: rgba(255, 255, 255, 0.2);   /* Transparencia */
+  backdrop-filter: blur(12px);            /* Difuminado */
+  -webkit-backdrop-filter: blur(12px);    /* Compatibilidad Safari */
+  border-radius: 16px;                    /* Bordes redondeados */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1); /* Sombra ligera */
+}
+
+.messages {
+  align-self: flex-start;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.messages p {
+  text-align: left;
+  margin: 8px 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.input-container {
+  position: fixed;             /* Fijo en la pantalla */
+  bottom: 20px;                /* Separado del borde inferior */
+  left: 50%;                   /* Centrado horizontalmente */
+  transform: translateX(-50%); /* Ajuste fino para centrar */
+  display: flex;
+  gap: 10px;
+  width: 90%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.8);  /* Fondo claro visible */
+  backdrop-filter: blur(6px);            /* Difuminado elegante */
+  border-radius: 24px;
+  padding: 10px 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+.input-container input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 20px;
+  background: #fff;            /* Fondo blanco para que se vea */
+  color: #000;                 /* Texto negro */
+}
+
+.input-container input::placeholder {
+  color: #666;                 /* Placeholder gris */
+}
+
+.send-button {
+  background-color: #0078d4;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.send-button:hover {
+  background-color: #005a9e;
+}
