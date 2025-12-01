@@ -33,26 +33,7 @@ html, body {
   z-index: -1; 
 }
 
-/* Sidebar fijo con sombra y bordes */
-.sidebar {
-  position: fixed;
-  top: 10px;                  
-  left: 50%;                  
-  transform: translateX(-50%);/* centra horizontalmente */
-  width: 95%;                 
-  height: 60px;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1.5rem;
-  z-index: 1000;
-
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
-}
 
 /* Contenido principal con espacio debajo del navbar */
 .main-content {

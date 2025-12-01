@@ -1,7 +1,6 @@
 import Sidebar from './components/Sidebar';   // Tu navbar (sidebar)
 import ChatContainer from './components/ChatContainer';
 import Chatbox from './components/chatbox';
-import LightRays from './components/LightRays';
 import './App.css';
 
 function App() {

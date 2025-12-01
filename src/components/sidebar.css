@@ -12,15 +12,17 @@
   padding: 0 1.5rem;
   z-index: 1000;
 
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
+  /*background:rgba(255, 255, 255, 0.2);*/
+  /*backdrop-filter: blur(10px);*/
+
+  background: #01337C;  
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.25);
 }
 
 .navbar-logo h2 {
   margin: 0;
-  color: black;           /* Texto claro para contraste */
+  color: #FFFFFF;           /* Texto claro para contraste */
 }
 
 .navbar-links {
@@ -33,12 +35,12 @@
 
 .navbar-links li a {
   text-decoration: none;
-  color: black;
+  color: #FFFFFF;
   transition: color 0.3s;
 }
 
 .navbar-links li a:hover {
-  color: #00bcd4;        /* Azul moderno para hover */
+  color: #FFD700;        /* Azul moderno para hover */
 }
 
 .btn-login {
