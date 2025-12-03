@@ -13,9 +13,10 @@
   z-index: 1000;
 
   /*background:rgba(255, 255, 255, 0.2);*/
-  /*backdrop-filter: blur(10px);*/
+  /*backdrop-filter: blur(10px);
+  #800020 rojo de la faculta de derecho*/
 
-  background: #01337C;  
+  background: #800020;  
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.25);
 }
@@ -28,7 +29,7 @@
 .navbar-links {
   list-style: none;
   display: flex;
-  gap: 1.2rem;
+  gap: 1.5 rem;
   margin: 0;
   padding: 0;
 }

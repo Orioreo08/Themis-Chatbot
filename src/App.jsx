@@ -13,15 +13,13 @@ function App() {
 
       {/* Fondo con imagen y efecto LightRays */}
       <div className="background-layer">
-        
-      {/* <LightRays /> */}
-        
+            
       </div>
 
       {/* Contenido principal */}
       <main className="main-content">
         {/* <Chatbox /> */}
-        <h2>Hola, en que te puedo ayudar!</h2>
+        
         <ChatContainer />
       </main>
     </div>

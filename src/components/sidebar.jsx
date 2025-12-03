@@ -10,21 +10,26 @@ export default function Navbar() {
   return (
     <nav className="sidebar">
       <div className="navbar-logo">
-        <h2>Themis</h2>
+        <h2>USM</h2>
       </div>
 
+      {/*      
       <ul className="navbar-links">
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#servicios">Servicios</a></li>
         <li><a href="#contacto">Contacto</a></li>
         <li><a href="#acerca">Acerca de</a></li>
-      </ul>
+      </ul> */}
 
       <div className="navbar-actions">
         {/* Botón de Login con logo USM */}
-        <button className="btn-login"  onClick={handleLogin}>
-          <h2>USM</h2>       
-        </button>
+         <img
+          src="/background/Facultad de derecho(sin fondo).png"
+          alt="Logo Facultad de derecho"
+          className="logo-usm"
+          style={{ height: '60px', marginRight: '8px' }}
+    />
+    
       </div>
     </nav>
   );
